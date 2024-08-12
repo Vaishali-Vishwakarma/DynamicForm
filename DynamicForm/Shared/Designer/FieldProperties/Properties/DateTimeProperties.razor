@@ -1,0 +1,12 @@
+﻿@using DynamicForm.Shared.Designer.FieldProperties.Properties
+@inherits PropertiesComponentBase
+
+<form class="d-flex flex-column" novalidate>
+    <DefaultPropertiesComp ComponentData="@ComponentData"
+                           OnLabelChanged="@OnLabelChangedAsync"
+                           OnWidthChanged="@OnWidthChangedAsync" />
+</form>
+
+@code {
+
+}

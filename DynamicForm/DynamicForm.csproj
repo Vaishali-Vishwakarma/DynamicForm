@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Shared\Designer\FieldProperties\Properties\EmailProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\FileProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\LinkProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\MultiLineProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\NumberProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\SingelLineProperties.razor" />
+    <Content Remove="Shared\Designer\FieldProperties\Properties\TabsProperties.razor" />
+    <Content Remove="Shared\Main\MainLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\Designer\FieldProperties\FieldPropertiesPanel.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\CheckboxProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\DateTimeProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\DefaultPropertiesComp.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\EmailProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\FileProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\LinkProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\MultiLineProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\NumberProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\SingelLineProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\TabProperties.razor" />
+    <None Include="Shared\Designer\FieldProperties\Properties\TabsProperties.razor" />
+    <None Include="Shared\Designer\FormDesigner.razor" />
+    <None Include="Shared\Designer\Palette\PalettePanel.razor" />
+    <None Include="Shared\Designer\Palette\PaletteWidget.razor" />
+    <None Include="Shared\Designer\Whiteboard\Component.razor" />
+    <None Include="Shared\Designer\Whiteboard\ComponentMover.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\CheckboxComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\DateTimeComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\EmailComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\FileComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\LinkComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\MultiLineComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\NumberComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\SingleLineComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Components\TabsComp.razor" />
+    <None Include="Shared\Designer\Whiteboard\Container.razor" />
+    <None Include="Shared\Designer\Whiteboard\DropZone.razor" />
+    <None Include="Shared\Main\MainLayout.razor" />
+    <None Include="Shared\Main\MainToolbar.razor" />
+    <None Include="wwwroot\images\SplashScreen.svg" />
+    <None Include="wwwroot\js\form-designer.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MatBlazor" Version="2.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.20" />
+  </ItemGroup>
+
+</Project>
