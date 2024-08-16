@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Web
+@using Radzen.Blazor
 @namespace DynamicForm.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
@@ -30,6 +31,7 @@
     <link href="css/whiteboard/container.css" rel="stylesheet" />
     <link href="css/whiteboard/drag-drop.css" rel="stylesheet" />
     <link href="css/whiteboard/tabs.css" rel="stylesheet" />
+    <component type="typeof(RadzenTheme)" render-mode="ServerPrerendered" param-Theme="@("material")" />
 </head>
 <body>
     <component type="typeof(App)" render-mode="ServerPrerendered" />
@@ -52,5 +54,7 @@
 
     <!--Cutom JS Libraries-->
     <script src="js/form-designer.js"></script>
+
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js?v=@(typeof(Radzen.Colors).Assembly.GetName().Version)"></script>
 </body>
 </html>
